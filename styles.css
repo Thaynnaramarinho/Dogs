@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap');
+
+:root {
+    --laranja-claro: #FF862A;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffd700;
+    --vermelho: #95e0ff;
+    --cinza: #5e5e5e;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Nunito';
+    background-color: #95e0ff;
+}
+
+header {
+    background-color: #95e0ff;
+}
+
+
+section {
+    padding-bottom: 10rem;
+}
+
+.circle {
+  border-radius: 50%;
+  object-fit: cover; /* garante que a imagem não deforme */
+}
+
+
+
+
+.nav-link {
+    color: #000000;
+    font-weight: 600;
+}
+
+.inicio-fundo {
+    background-image: url('pexels-simonakidric-2607544.jpg');
+    background-size: cover;
+    background-position: right;
+    border-radius: 100px;
+    width: 100%;
+    height: 650px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+.botao-inicio {
+    background-color: var(--vermelho);
+    border-radius: 50px;
+    border: none;
+    width: 19em;
+    height: 5em;
+    align-content: center;
+
+}
+
+.display-4 {
+    text-shadow: -5px 5px var(--laranja-claro);
+}
+
+
+
+
+h2 {
+    font-family: 'Nunito', serif;
+    font-size: 2.5em;
+    font-style: normal;
+    color: #b300ff;
+    font-weight: 700;
+}
+
+b {
+    color: #000000;
+}
+
+
+
+#Fotos {
+    background-color: #95e0ff;
+
+}
+
+
+
+#Conheça {
+    background-image: url('pexels-katlovessteve-551628.jpg');
+    background-size: cover;
+    padding: 4rem 0;
+    border-radius: 50px;
+    /* Espaçamento interno para a seção de contato */
+
+}
+
+.formulario {
+    background-color: #ffffff;
+    padding: 2rem;
+    /* Espaçamento interno dentro do formulário */
+    border-radius: 10px;
+    /* Borda arredondada para o formulário */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para destacar o formulário */
+    font-weight: bold;
+}
+
+.formulario button {
+    background-color: #95e0ff;
+    border: none;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: #F1EDEF;
+}
+.menu-acessibilidade{
+    position: fixed;
+    top:2rem;
+    right:20px;
+    z-index: 1000;
+}
+
+.rotacao-botao{
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade{
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button{
+    margin-bottom: 5px;
+}
+.apresenta-lista{
+    display: none;
+}
+
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
+}
+
+.alto-contraste body{
+    background-color: none
+}
+
+.alto-contraste h2{
+    color:var(--alto-contraste-link);
+}
+
+.alto-contraste b{
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste #dogs {
+    background: none;
+}
+
+.alto-contraste #Fotos {
+    background-color: var(--alto-contraste-fundo);
+}
+.alto-contraste .fundo-galeria {
+    background: none;
+}
